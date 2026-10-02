@@ -1,75 +1,37 @@
-Actualizado. Texto completo para copiar:
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>GestionaPro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GestionaPro — Guajiros Skate</title>
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwXfXyilx5PbEGkbOsARKsAztOetGmBtPZHwDqqKMLVC9pdTOxHIi2j_2Wl2Jl4IWX4/exec">
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #0B1E3D;
-  }
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  #cargando {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #0B1E3D;
-    color: #F4F6FB;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    z-index: 10;
-    transition: opacity 0.3s ease;
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #0B1E3D 0%, #2F6FED 100%);
+    font-family: -apple-system, 'Segoe UI', Tahoma, Arial, sans-serif; color: #fff; text-align: center; padding: 24px;
   }
   .spinner {
-    width: 44px;
-    height: 44px;
-    border: 4px solid rgba(244,246,251,0.25);
-    border-top-color: #FF5F3D;
-    border-radius: 50%;
-    animation: girar 0.8s linear infinite;
-    margin-bottom: 16px;
+    width: 54px; height: 54px; border: 5px solid rgba(255,255,255,0.3); border-top-color: #fff;
+    border-radius: 50%; animation: girar 0.8s linear infinite; margin-bottom: 22px;
   }
   @keyframes girar { to { transform: rotate(360deg); } }
-  #cargando p { font-size: 15px; color: #B9C4DC; margin: 0; }
+  h1 { font-size: 1.3rem; margin: 0 0 8px; font-weight: 700; }
+  p { font-size: 0.95rem; color: #cfe0ff; margin: 0 0 22px; }
+  a.btn {
+    display: inline-block; background: #fff; color: #0B1E3D; text-decoration: none; font-weight: 700;
+    padding: 12px 22px; border-radius: 8px; font-size: 0.95rem;
+  }
 </style>
 </head>
 <body>
-
-<div id="cargando">
-  <div class="spinner"></div>
-  <p>Cargando GestionaPro...</p>
-</div>
-
-<!--
-  ⚠️ PASO OBLIGATORIO ANTES DE PUBLICAR:
-  Reemplaza la URL de abajo por tu URL real de /exec
-  (la que usas hoy para entrar a la app desde script.google.com/macros/s/.../exec)
-
-  Si más adelante haces una "New deployment" en Apps Script (en vez de "Edit deployment"
-  sobre la misma), la URL cambia y hay que actualizarla aquí también.
--->
-<iframe
-  id="appFrame"
-  src="https://script.google.com/macros/s/AKfycbyKolYH0Rkp5L-erTzqBDYiiD3iU3-JHUD-j7gRg3u__WJhysvU9j1rPmjUG_HyRd4/exec"
-  onload="document.getElementById('cargando').style.display='none';"
-  allow="clipboard-write"
-></iframe>
-
+<div class="spinner"></div>
+<h1>Abriendo Guajiros Skate…</h1>
+<p>Si no te redirige automáticamente en unos segundos, toca el botón.</p>
+<a class="btn" href="https://script.google.com/macros/s/AKfycbwXfXyilx5PbEGkbOsARKsAztOetGmBtPZHwDqqKMLVC9pdTOxHIi2j_2Wl2Jl4IWX4/exec">Entrar a la app</a>
+<script>
+  window.location.replace("https://script.google.com/macros/s/AKfycbwXfXyilx5PbEGkbOsARKsAztOetGmBtPZHwDqqKMLVC9pdTOxHIi2j_2Wl2Jl4IWX4/exec");
+</script>
 </body>
 </html>
-```
